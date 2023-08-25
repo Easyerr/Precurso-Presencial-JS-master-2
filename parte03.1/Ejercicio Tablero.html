@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo For 3</title>
+</head>
+
+<body>
+    <script>
+       
+
+       let lineas = parseInt(prompt("Introduce el número de líneas:"));
+
+let resultado1 = "";
+let resultado2 = "";
+
+let i = 1;
+while (i <= lineas) {
+    if (i % 2 == 0) {
+        resultado1 = resultado1 + "X ";
+    } else {
+        resultado1 = resultado1 + "O "; //OX
+    }
+    i = i + 1;
+}
+
+i = 1;
+while (i <= lineas) {
+    if (i % 2 == 1) {
+        resultado2 = resultado2 + "X ";
+    } else {
+        resultado2 = resultado2 + "O ";//XO
+    }
+    i = i + 1;
+}
+
+i = 1;
+while (i <= lineas) {
+    if (i % 2 == 0) {
+        console.log(resultado1);
+    } else {
+        console.log(resultado2);
+    }
+    i = i + 1;
+}
+
+
+
+
+      
+
+
+
+       
+    </script>
+</body>
+
+</html>
