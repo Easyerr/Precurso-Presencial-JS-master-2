@@ -17,12 +17,13 @@
          * 3. Para poder modificar la mitad de la palabra (mayúsculas), necesitarás primero obtener una cadena que sólo tenga esa parte
          * 4. Una vez que tengamos la mitad de la palabra en mayúsculas, tendrás que reemplazar una subcadena por otra
          */
-        let nombre = "casa"
+        let nombre = prompt("Introduce una palabra:")
         let numeroLetras = nombre.length
-        let subcadenaLow = nombre.substring (0,2);
-        let subcadenaUp = nombre.substring (2,4);
+        let mitad = numeroLetras/2
+        let subcadenaLow = nombre.substring (0,mitad);
+        let subcadenaUp = nombre.substring (mitad);
         let mayus = subcadenaUp.toUpperCase();
-        console.log(subcadenaLow + mayus)
+        console.log(subcadenaLow + mayus);
 
 
 
